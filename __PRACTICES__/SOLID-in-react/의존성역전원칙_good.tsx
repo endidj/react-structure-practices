@@ -4,6 +4,11 @@
 import { useEffect, useState } from 'react';
 
 // GOOD 예시 - 추상화된 인터페이스 사용
+// 고수준 모듈(UserList)는 구체적인 구현을 몰라도 됨
+// 고수준 모듈이란? : 비즈니스 로직을 다루는 부분
+// "무엇"을 할지 정의
+// 저수준 모듈이란? : 구체적인 구현을 다루는 부분
+// "어떻게" 할지 정의
 
 // 1. 먼저 추상화된 인터페이스 정의
 interface UserService {

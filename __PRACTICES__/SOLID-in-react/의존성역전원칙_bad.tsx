@@ -3,8 +3,8 @@
 
 import { useEffect, useState } from 'react';
 
-// BAD 예시 - 고수준 모듈이 저수준 모듈(axios)에 직접 의존
-const UserList_Bad = () => {
+// BAD 예시 - 고수준 모듈(UserList)이 저수준 모듈(axios)에 직접 의존
+const UserList = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
