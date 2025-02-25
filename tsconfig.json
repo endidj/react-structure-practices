@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    // 컴파일된 JavaScript의 버전 설정 (ES5는 널리 지원되는 버전)
+    "target": "es5",
+
+    // TypeScript가 사용할 라이브러리 정의
+    // dom: 브라우저 API
+    // dom.iterable: 반복 가능한 DOM 요소
+    // esnext: 최신 JavaScript 기능
+    "lib": ["dom", "dom.iterable", "esnext"],
+
+    // JavaScript 파일의 컴파일 허용
+    "allowJs": true,
+
+    // node_modules의 타입 체크 스킵 (빌드 성능 향상)
+    "skipLibCheck": true,
+
+    // CommonJS 모듈을 ES6 모듈 방식으로 import 가능하게 함
+    "esModuleInterop": true,
+
+    // default export가 없는 모듈에서도 default import 허용
+    "allowSyntheticDefaultImports": true,
+
+    // 파일 이름의 대소문자 일관성 강제
+    "forceConsistentCasingInFileNames": true,
+
+    // switch문에서 case간 fall-through 방지
+    "noFallthroughCasesInSwitch": true,
+
+    // 모듈 시스템 설정 (최신 ECMAScript 모듈 사용)
+    "module": "esnext",
+
+    // 모듈 해석 방식 설정 (Node.js 방식)
+    "moduleResolution": "node",
+
+    // JSON 파일을 모듈로 import 가능하게 함
+    "resolveJsonModule": true,
+
+    // 각 파일을 독립적인 모듈로 트랜스파일
+    "isolatedModules": true,
+
+    // JavaScript 파일 생성하지 않음 (다른 도구가 처리)
+    "noEmit": true,
+
+    "checkJs": true,
+
+    // React JSX 처리 방식 설정
+    "jsx": "react-jsx"
+  },
+
+  // TypeScript가 컴파일할 파일들의 위치
+  "include": ["./__PRACTICES__/**/*"],
+
+  // 컴파일에서 제외할 파일들
+  "exclude": ["node_modules"]
+}

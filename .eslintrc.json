@@ -20,6 +20,7 @@
   },
   "rules": {
     "prettier/prettier": ["error"],
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "no-redeclare": "error" // 중복 변수 선언 시 오류 발생
   }
 }
